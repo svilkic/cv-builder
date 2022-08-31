@@ -1,0 +1,38 @@
+.header {
+  position: relative;
+  padding: 2rem;
+  border-bottom: 1px solid var(--color-muted);
+  z-index: 1;
+}
+
+.ball {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: absolute;
+  filter: blur(75px);
+  z-index: -1;
+  opacity: 0.8;
+}
+.ball:nth-of-type(1) {
+  top: -15px;
+  left: -15px;
+  background-color: #ff620a;
+}
+.ball:nth-of-type(2) {
+  top: 0px;
+  left: 80px;
+  background-color: #49f2fd;
+}
+.ball:nth-of-type(3) {
+  top: 80px;
+  left: 40px;
+  background-color: #fb49ff;
+}
+
+@media screen and (min-width: 600px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
